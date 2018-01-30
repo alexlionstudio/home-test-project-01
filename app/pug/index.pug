@@ -11,15 +11,20 @@ head
 	meta(name="description" content="Описание страницы...")
 body
 	nav(class="navbar navbar-expand-lg navbar-light bg-light")
-		a(class="navbar-brand" href="#") LOGO
-		button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-			span(class="navbar-toggler-icon")
-		div(class="collapse navbar-collapse" id="navbarSupportedContent")
-			ul(class="navbar-nav mr-auto")
+		.container
+			a(class="navbar-brand" href="#") LOGO
+			button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+				span(class="navbar-toggler-icon")
+			div(class="collapse navbar-collapse" id="navbarSupportedContent")
+				//- первый ul для выравнивания меню в лево
+				ul(class="navbar-nav mr-auto")
+				ul(class="navbar-nav")
 
-					each val in ['Home','Catalog','About us','Contacts']
-						li(class="nav-item")
-							a(class="nav-link" href="#")=val
+						each val in ['Home','Catalog','About us','Contacts']
+							li(class="nav-item")
+								a(class="nav-link" href="#")=val
+	section.container
+		.jumbotron
 
 
 	h1 Wellcome to my project
