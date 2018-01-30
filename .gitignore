@@ -1,0 +1,7 @@
+.git/
+.git
+.tmp/
+.node_modules/
+.app/bower/
+node_modules/
+app/bower/

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Home Work Git and GitHub
+	link(rel="stylesheet", href="bower/bootstrap/dist/css/bootstrap.min.css")
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="viewport" content="width=device-width, initial-scale=1")
+	meta(name="keywords" content="Ключевые слова...")
+	meta(name="description" content="Описание страницы...")
+body
+	nav(class="navbar navbar-expand-lg navbar-light bg-light")
+		a(class="navbar-brand" href="#") LOGO
+		button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+			span(class="navbar-toggler-icon")
+		div(class="collapse navbar-collapse" id="navbarSupportedContent")
+			ul(class="navbar-nav mr-auto")
+
+					each val in ['Home','Catalog','About us','Contacts']
+						li(class="nav-item")
+							a(class="nav-link" href="#")=val
+
+
+	h1 Wellcome to my project
+
+
+	
+	script(src="bower/jquery/dist/jquery.min.js")
+	script(src="bower/bootstrap/dist/js/bootstrap.min.js")
+	
